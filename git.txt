@@ -29,3 +29,11 @@
     추가 작업이 남았을 때(소셜 로그인 연동으로 확장 계획이 있다든지)
     버그가 발생할 지도 모를 때
 - 따라서 팀 규칙에 따라 머지 후 1주일 후 삭제와 같이 기한을 정하는 방법이 있다
+
+9. 나는 상품관련 개발을 진행 중, 로그인이 미완료 상태라서 목 객체로 작업 중
+- feature/mock-product 브랜치
+    mock 객체와 실객체의 패키지를 분리해서 작업
+- 로그인 기능이 완성됐다면 /main을 업데이트
+- main을 복사해 feature/mock-product2 브랜치 생성
+  git checkout feature/mock-product -- src/product/
+- 테스트 후 기존 feature/mock-product 삭제
